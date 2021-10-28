@@ -13,6 +13,15 @@ LAB EXERCISE 12 - Real-Time Operating System
 
 	GOOD LUCK!
  *----------------------------------------------------------------------------*/
+ 
+ /*************************************************************************
+*
+* File name : main.cpp
+* Description : Contains main function to read temperature values from DS1631 I2C based sensor and display on 16X2 LCD display - SPI based module
+* Author: Taher Ujjainwala and Steve Christensen
+* Tools : mbed, Keil
+*
+**************************************************************************/
 
 #include "mbed.h"
 #include "rtos.h"
@@ -20,122 +29,157 @@ LAB EXERCISE 12 - Real-Time Operating System
 #include "NHD_0216HZ.h"
 #include "pindef.h"
 #include "cmsis_os.h"
-//#include "platform/mbed_thread.h"
 
-/*
-Define the mutex
-Define the LCD display and the temperature sensor
-Define other inputs and outputs
-*/
 
+//Defining Mutex for LCD - Because LCD is a shared process 
 Mutex LCD_Display;
-//osThreadDef t2;
 
+//Define the LCD and the temperature sensor
+NHD_0216HZ LCD(SPI_CS, SPI_MOSI, SPI_SCLK);		//Defining the default SPI pins for communication using SHIFT Register 
+DS1631 TEMP(I2C_SDA, I2C_SCL, 0x90);  				//Defining the default I2C pins for communication with the Slave Address
 
-
-
-NHD_0216HZ LCD(SPI_CS, SPI_MOSI, SPI_SCLK);
-
-DS1631 TEMP(I2C_SDA, I2C_SCL, 0x90);
-
-
+//Defining PWM for External LED 
+//D8 --> PA_9
 PwmOut Ext_LED(D8);
+
+//Defining Internal LED 
+//LED1 --> LD2
 DigitalOut Int_LED(LED1);
+
+//Defining Analog Pin to Read Potentiometer value - To control LED brightness 
+//A0 --> PA_0
 AnalogIn POT_VAL(A0);
 
+//Defining variables for counter and temperature value
 uint32_t counter = 0;
 float temp;
 
 
-//Write your code here
 
-
-//Display temperature on the LCD
+//Display temperature on the LCD - Thread to read temperature and display on LCD
 void temp_thread(void const *args){
 	
-	while (true){
-	LCD_Display.lock();
-	LCD.clr_lcd();
-	LCD.set_cursor(0,0); 
-	temp = TEMP.read();
-	LCD.printf("Temp: %f", temp);
-	printf("Temperature is %f\n\r", temp);
-	osDelay(2000);
-	LCD_Display.unlock();
+	//Infinite While Loop 
+	
+	while (true){	
+		//Locking the Display to access the shared resource 
+		LCD_Display.lock();
+		
+		//Clearing the LCD content if any 
+		LCD.clr_lcd();
+		
+		//Setting the LCD cursor to Row 0 Column 0
+		LCD.set_cursor(0,0); 
+		
+		//Reading the temperature from DS1631 module 
+		temp = TEMP.read();
+		
+		//Displaying the temperature on LCD display 
+		LCD.printf("Temp: %f", temp);
+		
+		//Printing on serial for debugging purposes
+		printf("Temperature is %f\n\r", temp);
+		
+		//Delay for 2 seconds 
+		osDelay(2000);
+		
+		//Releasing the shared resouces for other threads
+		LCD_Display.unlock();
+		
+		}
 	}
-	
-	//write your code here
-	
-}
 
-//Adjust the brightness of the RGB LED
+	
+//Adjust the brightness of the External LED using Potentiometer
 void adjust_brightness(void const *args){
+		//Infinite While loop 
+	
 		while(true) {
+			
+			//Reading the potentiometer value and changing the brightness of External LED 
 			Ext_LED = (0.5 * POT_VAL.read());
+			
+			//Delay for 1 second
 			osDelay(1000);
 		}
-	//write your code here
-	
+		
 }
 
-//Blink an LED
+//Blink an Internal LED
 void led1_thread(void const *args){
 	
+	//Infinite While Loop
 	while (true) {
+				//Blinking an Internal LED 
         Int_LED =! Int_LED;
+				
+				//Delay for 500mseconds
         osDelay(500);
-				//Int_LED =0;
-    }
-	//write your code here
+				
+	}
 	
 }
 
 //Display a counter on the LCD
 void count_thread(void const *args){
 	
+	//Infinite While Loop
 	while (true){
-	LCD_Display.lock();
-	LCD.clr_lcd();
-	LCD.set_cursor(0,0); 
-	LCD.printf("Counter: %d", counter);
-	counter++;
-	osDelay(2000);
-	printf("Counter value is %d\n\r", counter);
-	LCD_Display.unlock();
+		
+		//Locking the Display to access the shared resource 
+		LCD_Display.lock();
+		
+		//Clearing the LCD content if any 
+		LCD.clr_lcd();
+		
+		//Setting the LCD cursor to Row 0 Column 0
+		LCD.set_cursor(0,0); 
+		
+		///Displaying the Counter on LCD display 
+		LCD.printf("Counter: %d", counter);
+		
+		//Incrementing the Counter value 
+		counter++;
+		
+		//Delay for 2 seconds
+		osDelay(2000);
+		
+		//Printing the Counter value for debugging purposes 
+		printf("Counter value is %d\n\r", counter);
+		
+		//Releasing the shared resouces for other threads
+		LCD_Display.unlock();
 
-	}	//write your code here
+	}	
 	
 }
 
 /*----------------------------------------------------------------------------
  MAIN function
  *----------------------------------------------------------------------------*/
+
+//Defining All the threads with their callback functions, Priority and Stack size
+
 	osThreadDef(led1_thread, osPriorityNormal, DEFAULT_STACK_SIZE);
 	osThreadDef(adjust_brightness, osPriorityNormal, DEFAULT_STACK_SIZE);
 	osThreadDef(temp_thread, osPriorityNormal, DEFAULT_STACK_SIZE);
 	osThreadDef(count_thread, osPriorityNormal, DEFAULT_STACK_SIZE);
 
 int main(){
-	/*
-	Initialise and clear the LCD display
-	Start all threads
-	Wait for timer interrupt
-	*/
 	
-	LCD.init_lcd();
-	LCD.clr_lcd();
+		//Initialising LCD and clear the LCD display
+		LCD.init_lcd();
+		LCD.clr_lcd();
 	
-
-	osThreadCreate(osThread(led1_thread), NULL);
-	osThreadCreate(osThread(adjust_brightness), NULL);
-	osThreadCreate(osThread(temp_thread), NULL);
-	osThreadCreate(osThread(count_thread), NULL);
+		//Starting all threads
+		osThreadCreate(osThread(led1_thread), NULL);
+		osThreadCreate(osThread(adjust_brightness), NULL);
+		osThreadCreate(osThread(temp_thread), NULL);
+		osThreadCreate(osThread(count_thread), NULL);
 	
 	while (1){
-		
-		//sleep();
-	__WFI();
-	//write your code here
+		__WFI();
+	
 	}
 	
 }

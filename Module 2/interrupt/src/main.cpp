@@ -14,43 +14,56 @@ PROGRAMMING USING MBED API
 	GOOD LUCK!
  *----------------------------------------------------------------------------*/
 
+/*************************************************************************
+*
+* File name : main.cpp
+* Description : Contains main function to read the button press values in interrupt based mode and control the led's
+* Author: Taher Ujjainwala and Steve Christensen
+* Tools : mbed, Keil
+*
+**************************************************************************/
+
 #include "mbed.h"
 
-
+//Defining the ON and OFF state of Led's
 #define LED_ON  1
 #define LED_OFF 0
 
 //Define interrupt inputs
-InterruptIn Button1(D2);
-InterruptIn Button2(D3);
-InterruptIn Button3(D4);
-InterruptIn Button4(D5);
+InterruptIn Button1(D2);     //PA_10
+InterruptIn Button2(D3);		 //PB_3
+InterruptIn Button3(D4);		 //PB_5
+InterruptIn Button4(D5);		 //PB_4
 
 //Define outputs
-DigitalOut Int_LED(LED1);
-DigitalOut Ext_LED(D8);
+DigitalOut Int_LED(LED1);		//LD2
+DigitalOut Ext_LED(D8);			//PA_9
 
 
 
 //Define ISRs for the interrupts
+//Button 1 ISR routine
 void button1_ISR_routine()
 {
-	Int_LED = LED_ON;
+	Int_LED = LED_ON;   //Switching the Internal LED ON 
 }
 
+//Button 2 ISR routine 
 void button2_ISR_routine()
 {
-	Int_LED = LED_OFF;
+	Int_LED = LED_OFF;	//Switching the Internal LED OFF
 }
 
+//Button 3 ISR routine
 void button3_ISR_routine()
 {
-	Ext_LED = LED_ON;
+	Ext_LED = LED_ON;		//Switching the External LED ON
 }
 
+//Button 4 ISR routine 
 void button4_ISR_routine()
 {
-	Ext_LED = LED_OFF;
+	Ext_LED = LED_OFF;	//Switching the External LED OFF
 }
 
 
@@ -67,9 +80,11 @@ int main(){
 	Int_LED = LED_OFF;
 	Ext_LED = LED_OFF;
 
+	
 	//Interrupt handlers
-	//Attach the address of the ISR to the rising edge
-  Button1.rise(&button1_ISR_routine);  // attach the address of the flip function to the rising edge
+	//Defining 4 Button Interrupts to handle button press - The system is in PULL UP mode 
+	//The interrupt is generated on RISING EDGE - that is when a button is pressed the event occurs and executes the ISR
+  Button1.rise(&button1_ISR_routine);  
 	Button2.rise(&button2_ISR_routine);
 	Button3.rise(&button3_ISR_routine);
 	Button4.rise(&button4_ISR_routine);
@@ -79,9 +94,6 @@ int main(){
 	while(1){
 		
 		sleep();
-		
-		//Write your code here
-	
 	}
 }
 

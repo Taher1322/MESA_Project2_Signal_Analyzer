@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\build\integration.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\build\integration.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Oct 27 00:42:33 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Oct 27 21:41:16 2021
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -184,8 +184,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::DigitalOut::operator =(int)
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::write_4bit(int, int)
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::init_lcd()
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::init_lcd()
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::write_4bit(int, int)
 </UL>
 
 <P><STRONG><a name="[6b]"></a>NHD_0216HZ::write_4bit(int, int)</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, nhd_0216hz.o(.text))
@@ -220,11 +220,11 @@ Global Symbols
 <P><STRONG><a name="[5d]"></a>NHD_0216HZ::init_lcd()</STRONG> (Thumb, 122 bytes, Stack size 8 bytes, nhd_0216hz.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = NHD_0216HZ::init_lcd() &rArr; NHD_0216HZ::set_cursor(int, int) &rArr; NHD_0216HZ::write_cmd(int) &rArr; NHD_0216HZ::write_4bit(int, int) &rArr; NHD_0216HZ::shift_out(int) &rArr; mbed::DigitalOut::operator =(int) &rArr; mbed_assert_internal &rArr; mbed_die &rArr; wait_ms &rArr; us_ticker_read &rArr; HAL_InitTick &rArr; NVIC_SetVector &rArr; __aeabi_memmove4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_us
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ms
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::set_cursor(int, int)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_us
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::write_cmd(int)
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::shift_out(int)
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ms
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::set_cursor(int, int)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
 </UL>
@@ -756,9 +756,9 @@ Global Symbols
 <P><STRONG><a name="[4b]"></a>main</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, retarget.o(i.$Sub$$main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = main &rArr; $Super$$main &rArr; NHD_0216HZ::printf(const char*, ...) &rArr; NHD_0216HZ::write_data(char) &rArr; NHD_0216HZ::write_4bit(int, int) &rArr; NHD_0216HZ::shift_out(int) &rArr; mbed::DigitalOut::operator =(int) &rArr; mbed_assert_internal &rArr; mbed_die &rArr; wait_ms &rArr; us_ticker_read &rArr; HAL_InitTick &rArr; NVIC_SetVector &rArr; __aeabi_memmove4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_sdk_init
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_sdk_init
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_main
-<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
@@ -960,8 +960,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_assert_internal
 </UL>
-<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::shift_out(int)
-<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::NHD_0216HZ(PinName, PinName, PinName)
+<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::NHD_0216HZ(PinName, PinName, PinName)
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::shift_out(int)
 </UL>
 
 <P><STRONG><a name="[73]"></a>mbed::I2C::read(int, char*, int, bool)</STRONG> (Thumb, 68 bytes, Stack size 32 bytes, I2C.o(i._ZN4mbed3I2C4readEiPcib))
@@ -1179,10 +1179,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vfprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_pinout
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_GPIO_Clock
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_pinout
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_peripheral
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_merge
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_GPIO_Clock
 </UL>
 
 <P><STRONG><a name="[c9]"></a>exit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, exit.o(i.exit))
@@ -1206,8 +1206,8 @@ Global Symbols
 <P><STRONG><a name="[cd]"></a>gpio_init</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, gpio_api.o(i.gpio_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = gpio_init &rArr; pin_function &rArr; Set_GPIO_Clock &rArr; error &rArr; exit &rArr; mbed_die &rArr; wait_ms &rArr; us_ticker_read &rArr; HAL_InitTick &rArr; NVIC_SetVector &rArr; __aeabi_memmove4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_function
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_GPIO_Clock
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_GPIO_Clock
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_function
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init_out
 </UL>
@@ -1274,12 +1274,12 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed::DigitalOut::operator =(int)
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init_out
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_frequency
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_dir
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_mode
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_function
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_frequency
 </UL>
 
 <P><STRONG><a name="[ca]"></a>mbed_die</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, board.o(i.mbed_die))
@@ -1322,10 +1322,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_assert_internal
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_GPIO_Clock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_mode
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_pinout
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
 </UL>
 
 <P><STRONG><a name="[d1]"></a>pinmap_merge</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, pinmap_common.o(i.pinmap_merge))
@@ -1333,8 +1333,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;error
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
 </UL>
 
 <P><STRONG><a name="[d0]"></a>pinmap_peripheral</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, pinmap_common.o(i.pinmap_peripheral))
@@ -1342,30 +1342,30 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;error
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
 </UL>
 
 <P><STRONG><a name="[d2]"></a>pinmap_pinout</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, pinmap_common.o(i.pinmap_pinout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = pinmap_pinout &rArr; pin_function &rArr; Set_GPIO_Clock &rArr; error &rArr; exit &rArr; mbed_die &rArr; wait_ms &rArr; us_ticker_read &rArr; HAL_InitTick &rArr; NVIC_SetVector &rArr; __aeabi_memmove4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_mode
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;error
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_mode
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_function
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;error
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;serial_init
 </UL>
 
 <P><STRONG><a name="[c6]"></a>serial_init</STRONG> (Thumb, 288 bytes, Stack size 32 bytes, serial_api.o(i.serial_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = serial_init &rArr; pinmap_pinout &rArr; pin_function &rArr; Set_GPIO_Clock &rArr; error &rArr; exit &rArr; mbed_die &rArr; wait_ms &rArr; us_ticker_read &rArr; HAL_InitTick &rArr; NVIC_SetVector &rArr; __aeabi_memmove4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mbed_assert_internal
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_pinout
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_peripheral
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pinmap_merge
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_mode
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_write
 </UL>
@@ -1406,10 +1406,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;us_ticker_irq_handler
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ms
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;us_ticker_irq_handler
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_us
-<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_ms
 </UL>
 
 <P><STRONG><a name="[db]"></a>us_ticker_set_interrupt</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, us_ticker.o(i.us_ticker_set_interrupt))
@@ -1439,10 +1439,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;us_ticker_read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::write_4bit(int, int)
-<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::shift_out(int)
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::init_lcd()
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::init_lcd()
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::clr_lcd()
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::write_4bit(int, int)
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NHD_0216HZ::shift_out(int)
 </UL>
 <P>
 <H3>

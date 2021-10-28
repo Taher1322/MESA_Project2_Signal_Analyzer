@@ -10,16 +10,22 @@ SERIAL COMMUNICATION
 	
 	GOOD LUCK!
  *----------------------------------------------------------------------------*/
+/*************************************************************************
+*
+* File name : main.cpp
+* Description : Contains main function to read temperature values from DS1631 I2C based sensor and display on 16X2 LCD display - SPI based module
+* Author: Taher Ujjainwala and Steve Christensen
+* Tools : mbed, Keil
+*
+**************************************************************************/
 
 #include "NHD_0216HZ.h"
 #include "DS1631.h"
 #include "pindef.h"
 
 //Define the LCD and the temperature sensor
-NHD_0216HZ LCD(SPI_CS, SPI_MOSI, SPI_SCLK);
-DS1631 TEMP(I2C_SDA, I2C_SCL, 0x90);
-//Write your code here
-
+NHD_0216HZ LCD(SPI_CS, SPI_MOSI, SPI_SCLK);   //Defining the default SPI pins for communication using SHIFT Register 
+DS1631 TEMP(I2C_SDA, I2C_SCL, 0x90);					//Defining the default I2C pins for communication with the Slave Address
 
 //Define a variable to store temperature measurement
 float temp;
@@ -31,31 +37,28 @@ float temp;
 int main() {
 	//Initialise the LCD
 	LCD.init_lcd();
-	//Write your code here
-	
-	
- //   SPI_CS = 1;
-    
- //   spi.format(8, 3);         //8bit spi mode 2
- //   spi.frequency(100000);    //100 kHz spi clock
+
 
 	while(1){
-		/*
-		Read the temperature from the DS1631
-		Update the LCD with new temperature measurement
-		*/
 		
+		//Setting the LCD cursor on Row 0 and Column 0
 		LCD.set_cursor(0,0); 
+		
+		//Reading the Temperature from DS1631
 		temp = TEMP.read();
-		//LCD.printf("Hello");
+		
+		//Printing debugging message for reference 
 		printf("Temperature is %f\n\r", temp);
+		
+		//Printing the Temperature value on LCD 
 		LCD.printf("Temp: %2f", temp);
+		
+		//Delay for 2 second
 		wait_ms(2000);
+		
+		//Clearing the data on LCD before printing next statement or values
 		LCD.clr_lcd();
-		
-		//Write your code here
-		
-		
+			
 	}
 }
 

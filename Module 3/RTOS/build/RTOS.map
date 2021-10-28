@@ -3974,20 +3974,20 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x00000194   Data   RO         2762    RESET               startup_stm32f401xe.o
-    0x08000194   0x08000194   0x00000000   Code   RO         3497  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000194   0x08000194   0x00000004   Code   RO         3836    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000198   0x08000198   0x00000004   Code   RO         3839    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x0800019c   0x0800019c   0x00000004   Code   RO         3499    .ARM.Collect$$$$00000006  mc_w.l(entry6b.o)
-    0x080001a0   0x080001a0   0x00000000   Code   RO         3841    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080001a0   0x080001a0   0x00000004   Code   RO         3842    .ARM.Collect$$$$00000009  mc_w.l(entry8a.o)
-    0x080001a4   0x080001a4   0x00000000   Code   RO         3843    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080001a4   0x080001a4   0x00000000   Code   RO         3844    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080001a4   0x080001a4   0x00000004   Code   RO         3845    .ARM.Collect$$$$0000000E  mc_w.l(entry10b.o)
-    0x080001a8   0x080001a8   0x00000000   Code   RO         3846    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000000   0x08000000   0x00000194   Data   RO         2909    RESET               startup_stm32f401xe.o
+    0x08000194   0x08000194   0x00000000   Code   RO         3644  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000194   0x08000194   0x00000004   Code   RO         3983    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000198   0x08000198   0x00000004   Code   RO         3986    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0800019c   0x0800019c   0x00000004   Code   RO         3646    .ARM.Collect$$$$00000006  mc_w.l(entry6b.o)
+    0x080001a0   0x080001a0   0x00000000   Code   RO         3988    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080001a0   0x080001a0   0x00000004   Code   RO         3989    .ARM.Collect$$$$00000009  mc_w.l(entry8a.o)
+    0x080001a4   0x080001a4   0x00000000   Code   RO         3990    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080001a4   0x080001a4   0x00000000   Code   RO         3991    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080001a4   0x080001a4   0x00000004   Code   RO         3992    .ARM.Collect$$$$0000000E  mc_w.l(entry10b.o)
+    0x080001a8   0x080001a8   0x00000000   Code   RO         3993    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
     0x080001a8   0x080001a8   0x0000001c   Code   RO          228    .ARM.Collect$$$$000000FF  rtx_conf_cm.o
-    0x080001c4   0x080001c4   0x00000004   Code   RO         3837    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x080001c8   0x080001c8   0x00000180   Code   RO         1153    .emb_text           hal_cm4.o
+    0x080001c4   0x080001c4   0x00000004   Code   RO         3984    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080001c8   0x080001c8   0x00000180   Code   RO         1300    .emb_text           hal_cm4.o
     0x08000348   0x08000348   0x00000334   Code   RO            1    .text               rt_task.o
     0x0800067c   0x0800067c   0x000002f8   Code   RO           50    .text               rt_system.o
     0x08000974   0x08000974   0x00000294   Code   RO           78    .text               rt_list.o
@@ -4005,183 +4005,183 @@ Memory Map of the image
     0x08002818   0x08002818   0x00000090   Code   RO          354    .text               mutex.o
     0x080028a8   0x080028a8   0x0000009c   Code   RO          371    .text               ds1631.o
     0x08002944   0x08002944   0x000002b8   Code   RO          773    .text               main.o
-    0x08002bfc   0x08002bfc   0x00000224   Code   RO         1079    .text               nhd_0216hz.o
-    0x08002e20   0x08002e20   0x00000024   Code   RO         2763    .text               startup_stm32f401xe.o
-    0x08002e44   0x08002e44   0x00000020   Code   RO         3504    .text               mc_w.l(initio_oe.o)
-    0x08002e64   0x08002e64   0x00000040   Code   RO         3512    .text               mc_w.l(memmovea.o)
-    0x08002ea4   0x08002ea4   0x00000024   Code   RO         3514    .text               mc_w.l(memseta.o)
-    0x08002ec8   0x08002ec8   0x0000000e   Code   RO         3518    .text               mc_w.l(strlen.o)
-    0x08002ed6   0x08002ed6   0x0000001c   Code   RO         3520    .text               mc_w.l(strcmp.o)
-    0x08002ef2   0x08002ef2   0x0000001e   Code   RO         3522    .text               mc_w.l(strncmp.o)
-    0x08002f10   0x08002f10   0x00000038   Code   RO         3787    .text               mc_w.l(__0sscanf.o)
-    0x08002f48   0x08002f48   0x0000014c   Code   RO         3789    .text               mc_w.l(_scanf_int.o)
-    0x08003094   0x08003094   0x00000020   Code   RO         3794    .text               mc_w.l(cpp_init.o)
-    0x080030b4   0x080030b4   0x0000002e   Code   RO         3796    .text               mc_w.l(aeabi_atexit.o)
-    0x080030e2   0x080030e2   0x000000e4   Code   RO         3798    .text               mf_w.l(dmul.o)
-    0x080031c6   0x080031c6   0x00000026   Code   RO         3800    .text               mf_w.l(f2d.o)
-    0x080031ec   0x080031ec   0x00000038   Code   RO         3802    .text               mf_w.l(d2f.o)
-    0x08003224   0x08003224   0x00000028   Code   RO         3852    .text               mc_w.l(fputc_fp.o)
-    0x0800324c   0x0800324c   0x0000002c   Code   RO         3854    .text               mc_w.l(uidiv.o)
-    0x08003278   0x08003278   0x00000062   Code   RO         3856    .text               mc_w.l(uldiv.o)
-    0x080032da   0x080032da   0x0000001c   Code   RO         3886    .text               mc_w.l(_chval.o)
+    0x08002bfc   0x08002bfc   0x00000224   Code   RO         1226    .text               nhd_0216hz.o
+    0x08002e20   0x08002e20   0x00000024   Code   RO         2910    .text               startup_stm32f401xe.o
+    0x08002e44   0x08002e44   0x00000020   Code   RO         3651    .text               mc_w.l(initio_oe.o)
+    0x08002e64   0x08002e64   0x00000040   Code   RO         3659    .text               mc_w.l(memmovea.o)
+    0x08002ea4   0x08002ea4   0x00000024   Code   RO         3661    .text               mc_w.l(memseta.o)
+    0x08002ec8   0x08002ec8   0x0000000e   Code   RO         3665    .text               mc_w.l(strlen.o)
+    0x08002ed6   0x08002ed6   0x0000001c   Code   RO         3667    .text               mc_w.l(strcmp.o)
+    0x08002ef2   0x08002ef2   0x0000001e   Code   RO         3669    .text               mc_w.l(strncmp.o)
+    0x08002f10   0x08002f10   0x00000038   Code   RO         3934    .text               mc_w.l(__0sscanf.o)
+    0x08002f48   0x08002f48   0x0000014c   Code   RO         3936    .text               mc_w.l(_scanf_int.o)
+    0x08003094   0x08003094   0x00000020   Code   RO         3941    .text               mc_w.l(cpp_init.o)
+    0x080030b4   0x080030b4   0x0000002e   Code   RO         3943    .text               mc_w.l(aeabi_atexit.o)
+    0x080030e2   0x080030e2   0x000000e4   Code   RO         3945    .text               mf_w.l(dmul.o)
+    0x080031c6   0x080031c6   0x00000026   Code   RO         3947    .text               mf_w.l(f2d.o)
+    0x080031ec   0x080031ec   0x00000038   Code   RO         3949    .text               mf_w.l(d2f.o)
+    0x08003224   0x08003224   0x00000028   Code   RO         3999    .text               mc_w.l(fputc_fp.o)
+    0x0800324c   0x0800324c   0x0000002c   Code   RO         4001    .text               mc_w.l(uidiv.o)
+    0x08003278   0x08003278   0x00000062   Code   RO         4003    .text               mc_w.l(uldiv.o)
+    0x080032da   0x080032da   0x0000001c   Code   RO         4033    .text               mc_w.l(_chval.o)
     0x080032f6   0x080032f6   0x00000002   PAD
-    0x080032f8   0x080032f8   0x00000028   Code   RO         3888    .text               mc_w.l(scanf_char.o)
-    0x08003320   0x08003320   0x00000040   Code   RO         3890    .text               mc_w.l(_sgetc.o)
-    0x08003360   0x08003360   0x00000000   Code   RO         3892    .text               mc_w.l(iusefp.o)
-    0x08003360   0x08003360   0x00000008   Code   RO         3893    .text               mc_w.l(cpp_dtor.o)
-    0x08003368   0x08003368   0x00000042   Code   RO         3901    .text               mc_w.l(cxa_finalize.o)
-    0x080033aa   0x080033aa   0x0000006e   Code   RO         3903    .text               mf_w.l(fepilogue.o)
-    0x08003418   0x08003418   0x000000ba   Code   RO         3905    .text               mf_w.l(depilogue.o)
-    0x080034d2   0x080034d2   0x0000014e   Code   RO         3907    .text               mf_w.l(dadd.o)
-    0x08003620   0x08003620   0x000000de   Code   RO         3909    .text               mf_w.l(ddiv.o)
-    0x080036fe   0x080036fe   0x00000030   Code   RO         3911    .text               mf_w.l(dfixul.o)
+    0x080032f8   0x080032f8   0x00000028   Code   RO         4035    .text               mc_w.l(scanf_char.o)
+    0x08003320   0x08003320   0x00000040   Code   RO         4037    .text               mc_w.l(_sgetc.o)
+    0x08003360   0x08003360   0x00000000   Code   RO         4039    .text               mc_w.l(iusefp.o)
+    0x08003360   0x08003360   0x00000008   Code   RO         4040    .text               mc_w.l(cpp_dtor.o)
+    0x08003368   0x08003368   0x00000042   Code   RO         4048    .text               mc_w.l(cxa_finalize.o)
+    0x080033aa   0x080033aa   0x0000006e   Code   RO         4050    .text               mf_w.l(fepilogue.o)
+    0x08003418   0x08003418   0x000000ba   Code   RO         4052    .text               mf_w.l(depilogue.o)
+    0x080034d2   0x080034d2   0x0000014e   Code   RO         4054    .text               mf_w.l(dadd.o)
+    0x08003620   0x08003620   0x000000de   Code   RO         4056    .text               mf_w.l(ddiv.o)
+    0x080036fe   0x080036fe   0x00000030   Code   RO         4058    .text               mf_w.l(dfixul.o)
     0x0800372e   0x0800372e   0x00000002   PAD
-    0x08003730   0x08003730   0x00000030   Code   RO         3913    .text               mf_w.l(cdrcmple.o)
-    0x08003760   0x08003760   0x00000024   Code   RO         3944    .text               mc_w.l(init.o)
-    0x08003784   0x08003784   0x0000001e   Code   RO         3947    .text               mc_w.l(llshl.o)
-    0x080037a2   0x080037a2   0x00000020   Code   RO         3949    .text               mc_w.l(llushr.o)
-    0x080037c2   0x080037c2   0x00000024   Code   RO         3951    .text               mc_w.l(llsshr.o)
-    0x080037e6   0x080037e6   0x0000000a   Code   RO         3953    .text               mc_w.l(isspace_c.o)
-    0x080037f0   0x080037f0   0x0000032c   Code   RO         3961    .text               mc_w.l(_scanf.o)
-    0x08003b1c   0x08003b1c   0x00000002   Code   RO         3964    .text               mc_w.l(cpp_final.o)
+    0x08003730   0x08003730   0x00000030   Code   RO         4060    .text               mf_w.l(cdrcmple.o)
+    0x08003760   0x08003760   0x00000024   Code   RO         4091    .text               mc_w.l(init.o)
+    0x08003784   0x08003784   0x0000001e   Code   RO         4094    .text               mc_w.l(llshl.o)
+    0x080037a2   0x080037a2   0x00000020   Code   RO         4096    .text               mc_w.l(llushr.o)
+    0x080037c2   0x080037c2   0x00000024   Code   RO         4098    .text               mc_w.l(llsshr.o)
+    0x080037e6   0x080037e6   0x0000000a   Code   RO         4100    .text               mc_w.l(isspace_c.o)
+    0x080037f0   0x080037f0   0x0000032c   Code   RO         4108    .text               mc_w.l(_scanf.o)
+    0x08003b1c   0x08003b1c   0x00000002   Code   RO         4111    .text               mc_w.l(cpp_final.o)
     0x08003b1e   0x08003b1e   0x00000002   PAD
-    0x08003b20   0x08003b20   0x00000028   Code   RO         3979    .text               mc_w.l(ctype_c.o)
-    0x08003b48   0x08003b48   0x00000056   Code   RO         3994    .text               mc_w.l(__dczerorl2.o)
+    0x08003b20   0x08003b20   0x00000028   Code   RO         4126    .text               mc_w.l(ctype_c.o)
+    0x08003b48   0x08003b48   0x00000056   Code   RO         4141    .text               mc_w.l(__dczerorl2.o)
     0x08003b9e   0x08003b9e   0x00000002   PAD
-    0x08003ba0   0x08003ba0   0x00000004   Code   RO         1188    SVC_TABLE           svc_table.o
-    0x08003ba4   0x08003ba4   0x00000012   Code   RO         2781    i.$Sub$$main        retarget.o
+    0x08003ba0   0x08003ba0   0x00000004   Code   RO         1335    SVC_TABLE           svc_table.o
+    0x08003ba4   0x08003ba4   0x00000012   Code   RO         2928    i.$Sub$$main        retarget.o
     0x08003bb6   0x08003bb6   0x00000002   PAD
-    0x08003bb8   0x08003bb8   0x00000170   Code   RO         2021    i.HAL_ADC_ConfigChannel  stm32f4xx_hal_adc.o
-    0x08003d28   0x08003d28   0x00000006   Code   RO         2028    i.HAL_ADC_GetValue  stm32f4xx_hal_adc.o
+    0x08003bb8   0x08003bb8   0x00000170   Code   RO         2168    i.HAL_ADC_ConfigChannel  stm32f4xx_hal_adc.o
+    0x08003d28   0x08003d28   0x00000006   Code   RO         2175    i.HAL_ADC_GetValue  stm32f4xx_hal_adc.o
     0x08003d2e   0x08003d2e   0x00000002   PAD
-    0x08003d30   0x08003d30   0x00000140   Code   RO         2030    i.HAL_ADC_Init      stm32f4xx_hal_adc.o
-    0x08003e70   0x08003e70   0x00000002   Code   RO         2033    i.HAL_ADC_MspInit   stm32f4xx_hal_adc.o
-    0x08003e72   0x08003e72   0x00000050   Code   RO         2034    i.HAL_ADC_PollForConversion  stm32f4xx_hal_adc.o
+    0x08003d30   0x08003d30   0x00000140   Code   RO         2177    i.HAL_ADC_Init      stm32f4xx_hal_adc.o
+    0x08003e70   0x08003e70   0x00000002   Code   RO         2180    i.HAL_ADC_MspInit   stm32f4xx_hal_adc.o
+    0x08003e72   0x08003e72   0x00000050   Code   RO         2181    i.HAL_ADC_PollForConversion  stm32f4xx_hal_adc.o
     0x08003ec2   0x08003ec2   0x00000002   PAD
-    0x08003ec4   0x08003ec4   0x0000007c   Code   RO         2036    i.HAL_ADC_Start     stm32f4xx_hal_adc.o
-    0x08003f40   0x08003f40   0x00000248   Code   RO         2455    i.HAL_GPIO_Init     stm32f4xx_hal_gpio.o
-    0x08004188   0x08004188   0x0000000c   Code   RO         2414    i.HAL_GetTick       stm32f4xx_hal.o
-    0x08004194   0x08004194   0x000000fc   Code   RO         1478    i.HAL_I2C_Init      stm32f4xx_hal_i2c.o
-    0x08004290   0x08004290   0x00000002   Code   RO         1497    i.HAL_I2C_MspInit   stm32f4xx_hal_i2c.o
+    0x08003ec4   0x08003ec4   0x0000007c   Code   RO         2183    i.HAL_ADC_Start     stm32f4xx_hal_adc.o
+    0x08003f40   0x08003f40   0x00000248   Code   RO         2602    i.HAL_GPIO_Init     stm32f4xx_hal_gpio.o
+    0x08004188   0x08004188   0x0000000c   Code   RO         2561    i.HAL_GetTick       stm32f4xx_hal.o
+    0x08004194   0x08004194   0x000000fc   Code   RO         1625    i.HAL_I2C_Init      stm32f4xx_hal_i2c.o
+    0x08004290   0x08004290   0x00000002   Code   RO         1644    i.HAL_I2C_MspInit   stm32f4xx_hal_i2c.o
     0x08004292   0x08004292   0x00000002   PAD
-    0x08004294   0x08004294   0x00000010   Code   RO         2415    i.HAL_IncTick       stm32f4xx_hal.o
-    0x080042a4   0x080042a4   0x00000034   Code   RO         2416    i.HAL_Init          stm32f4xx_hal.o
-    0x080042d8   0x080042d8   0x000000a8   Code   RO         1227    i.HAL_InitTick      hal_tick.o
-    0x08004380   0x08004380   0x00000002   Code   RO         2419    i.HAL_MspInit       stm32f4xx_hal.o
+    0x08004294   0x08004294   0x00000010   Code   RO         2562    i.HAL_IncTick       stm32f4xx_hal.o
+    0x080042a4   0x080042a4   0x00000034   Code   RO         2563    i.HAL_Init          stm32f4xx_hal.o
+    0x080042d8   0x080042d8   0x000000a8   Code   RO         1374    i.HAL_InitTick      hal_tick.o
+    0x08004380   0x08004380   0x00000002   Code   RO         2566    i.HAL_MspInit       stm32f4xx_hal.o
     0x08004382   0x08004382   0x00000002   PAD
-    0x08004384   0x08004384   0x00000024   Code   RO         1621    i.HAL_NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
-    0x080043a8   0x080043a8   0x00000200   Code   RO         1676    i.HAL_RCC_ClockConfig  stm32f4xx_hal_rcc.o
-    0x080045a8   0x080045a8   0x000000c0   Code   RO         1681    i.HAL_RCC_GetHCLKFreq  stm32f4xx_hal_rcc.o
-    0x08004668   0x08004668   0x0000002c   Code   RO         1683    i.HAL_RCC_GetPCLK1Freq  stm32f4xx_hal_rcc.o
-    0x08004694   0x08004694   0x0000002c   Code   RO         1684    i.HAL_RCC_GetPCLK2Freq  stm32f4xx_hal_rcc.o
-    0x080046c0   0x080046c0   0x000003b4   Code   RO         1688    i.HAL_RCC_OscConfig  stm32f4xx_hal_rcc.o
-    0x08004a74   0x08004a74   0x0000002c   Code   RO         1290    i.HAL_TIMEx_PWMN_Start  stm32f4xx_hal_tim_ex.o
-    0x08004aa0   0x08004aa0   0x00000032   Code   RO         1760    i.HAL_TIM_OC_Init   stm32f4xx_hal_tim.o
-    0x08004ad2   0x08004ad2   0x00000002   Code   RO         1762    i.HAL_TIM_OC_MspInit  stm32f4xx_hal_tim.o
-    0x08004ad4   0x08004ad4   0x00000036   Code   RO         1763    i.HAL_TIM_OC_Start  stm32f4xx_hal_tim.o
+    0x08004384   0x08004384   0x00000024   Code   RO         1768    i.HAL_NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x080043a8   0x080043a8   0x00000200   Code   RO         1823    i.HAL_RCC_ClockConfig  stm32f4xx_hal_rcc.o
+    0x080045a8   0x080045a8   0x000000c0   Code   RO         1828    i.HAL_RCC_GetHCLKFreq  stm32f4xx_hal_rcc.o
+    0x08004668   0x08004668   0x0000002c   Code   RO         1830    i.HAL_RCC_GetPCLK1Freq  stm32f4xx_hal_rcc.o
+    0x08004694   0x08004694   0x0000002c   Code   RO         1831    i.HAL_RCC_GetPCLK2Freq  stm32f4xx_hal_rcc.o
+    0x080046c0   0x080046c0   0x000003b4   Code   RO         1835    i.HAL_RCC_OscConfig  stm32f4xx_hal_rcc.o
+    0x08004a74   0x08004a74   0x0000002c   Code   RO         1437    i.HAL_TIMEx_PWMN_Start  stm32f4xx_hal_tim_ex.o
+    0x08004aa0   0x08004aa0   0x00000032   Code   RO         1907    i.HAL_TIM_OC_Init   stm32f4xx_hal_tim.o
+    0x08004ad2   0x08004ad2   0x00000002   Code   RO         1909    i.HAL_TIM_OC_MspInit  stm32f4xx_hal_tim.o
+    0x08004ad4   0x08004ad4   0x00000036   Code   RO         1910    i.HAL_TIM_OC_Start  stm32f4xx_hal_tim.o
     0x08004b0a   0x08004b0a   0x00000002   PAD
-    0x08004b0c   0x08004b0c   0x00000214   Code   RO         1779    i.HAL_TIM_PWM_ConfigChannel  stm32f4xx_hal_tim.o
-    0x08004d20   0x08004d20   0x00000032   Code   RO         1782    i.HAL_TIM_PWM_Init  stm32f4xx_hal_tim.o
-    0x08004d52   0x08004d52   0x00000002   Code   RO         1784    i.HAL_TIM_PWM_MspInit  stm32f4xx_hal_tim.o
-    0x08004d54   0x08004d54   0x00000036   Code   RO         1786    i.HAL_TIM_PWM_Start  stm32f4xx_hal_tim.o
-    0x08004d8a   0x08004d8a   0x0000005e   Code   RO         2630    i.HAL_UART_Init     stm32f4xx_hal_uart.o
-    0x08004de8   0x08004de8   0x00000002   Code   RO         2632    i.HAL_UART_MspInit  stm32f4xx_hal_uart.o
+    0x08004b0c   0x08004b0c   0x00000214   Code   RO         1926    i.HAL_TIM_PWM_ConfigChannel  stm32f4xx_hal_tim.o
+    0x08004d20   0x08004d20   0x00000032   Code   RO         1929    i.HAL_TIM_PWM_Init  stm32f4xx_hal_tim.o
+    0x08004d52   0x08004d52   0x00000002   Code   RO         1931    i.HAL_TIM_PWM_MspInit  stm32f4xx_hal_tim.o
+    0x08004d54   0x08004d54   0x00000036   Code   RO         1933    i.HAL_TIM_PWM_Start  stm32f4xx_hal_tim.o
+    0x08004d8a   0x08004d8a   0x0000005e   Code   RO         2777    i.HAL_UART_Init     stm32f4xx_hal_uart.o
+    0x08004de8   0x08004de8   0x00000002   Code   RO         2779    i.HAL_UART_MspInit  stm32f4xx_hal_uart.o
     0x08004dea   0x08004dea   0x00000002   PAD
-    0x08004dec   0x08004dec   0x0000006c   Code   RO         1571    i.NVIC_SetVector    cmsis_nvic.o
-    0x08004e58   0x08004e58   0x0000007c   Code   RO         2537    i.SetSysClock_PLL_HSE  system_stm32f4xx.o
-    0x08004ed4   0x08004ed4   0x00000074   Code   RO         3301    i.Set_GPIO_Clock    mbed.ar(pinmap.o)
-    0x08004f48   0x08004f48   0x00000084   Code   RO         2539    i.SystemCoreClockUpdate  system_stm32f4xx.o
-    0x08004fcc   0x08004fcc   0x00000100   Code   RO         2540    i.SystemInit        system_stm32f4xx.o
-    0x080050cc   0x080050cc   0x00000094   Code   RO         1796    i.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
-    0x08005160   0x08005160   0x00000218   Code   RO         2648    i.UART_SetConfig    stm32f4xx_hal_uart.o
-    0x08005378   0x08005378   0x0000001a   Code   RO         1101    i._ZN4mbed10DigitalOutC1E7PinName  nhd_0216hz.o
+    0x08004dec   0x08004dec   0x0000006c   Code   RO         1718    i.NVIC_SetVector    cmsis_nvic.o
+    0x08004e58   0x08004e58   0x0000007c   Code   RO         2684    i.SetSysClock_PLL_HSE  system_stm32f4xx.o
+    0x08004ed4   0x08004ed4   0x00000074   Code   RO         3448    i.Set_GPIO_Clock    mbed.ar(pinmap.o)
+    0x08004f48   0x08004f48   0x00000084   Code   RO         2686    i.SystemCoreClockUpdate  system_stm32f4xx.o
+    0x08004fcc   0x08004fcc   0x00000100   Code   RO         2687    i.SystemInit        system_stm32f4xx.o
+    0x080050cc   0x080050cc   0x00000094   Code   RO         1943    i.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
+    0x08005160   0x08005160   0x00000218   Code   RO         2795    i.UART_SetConfig    stm32f4xx_hal_uart.o
+    0x08005378   0x08005378   0x0000001a   Code   RO         1248    i._ZN4mbed10DigitalOutC1E7PinName  nhd_0216hz.o
     0x08005392   0x08005392   0x00000002   PAD
-    0x08005394   0x08005394   0x0000005c   Code   RO         1095    i._ZN4mbed10DigitalOutaSEi  nhd_0216hz.o
-    0x080053f0   0x080053f0   0x00000048   Code   RO         3223    i._ZN4mbed3I2C4readEiPcib  mbed.ar(I2C.o)
-    0x08005438   0x08005438   0x00000048   Code   RO         3227    i._ZN4mbed3I2C5writeEiPKcib  mbed.ar(I2C.o)
-    0x08005480   0x08005480   0x00000024   Code   RO         3230    i._ZN4mbed3I2CC1E7PinNameS1_  mbed.ar(I2C.o)
-    0x080054a4   0x080054a4   0x00000004   Code   RO         3346    i._ZN4mbed8FileBase11getPathTypeEv  mbed.ar(FileBase.o)
-    0x080054a8   0x080054a8   0x00000038   Code   RO         3348    i._ZN4mbed8FileBase6lookupEPKcj  mbed.ar(FileBase.o)
-    0x080054e0   0x080054e0   0x00000018   Code   RO         3137    i._ZN4mbed8FilePath10fileSystemEv  mbed.ar(FilePath.o)
-    0x080054f8   0x080054f8   0x0000001c   Code   RO         3139    i._ZN4mbed8FilePath4fileEv  mbed.ar(FilePath.o)
-    0x08005514   0x08005514   0x0000000a   Code   RO         3140    i._ZN4mbed8FilePath6existsEv  mbed.ar(FilePath.o)
-    0x0800551e   0x0800551e   0x00000018   Code   RO         3141    i._ZN4mbed8FilePath6isFileEv  mbed.ar(FilePath.o)
-    0x08005536   0x08005536   0x00000004   Code   RO         3142    i._ZN4mbed8FilePath8fileNameEv  mbed.ar(FilePath.o)
-    0x0800553a   0x0800553a   0x00000040   Code   RO         3143    i._ZN4mbed8FilePathC1EPKc  mbed.ar(FilePath.o)
+    0x08005394   0x08005394   0x0000005c   Code   RO         1242    i._ZN4mbed10DigitalOutaSEi  nhd_0216hz.o
+    0x080053f0   0x080053f0   0x00000048   Code   RO         3370    i._ZN4mbed3I2C4readEiPcib  mbed.ar(I2C.o)
+    0x08005438   0x08005438   0x00000048   Code   RO         3374    i._ZN4mbed3I2C5writeEiPKcib  mbed.ar(I2C.o)
+    0x08005480   0x08005480   0x00000024   Code   RO         3377    i._ZN4mbed3I2CC1E7PinNameS1_  mbed.ar(I2C.o)
+    0x080054a4   0x080054a4   0x00000004   Code   RO         3493    i._ZN4mbed8FileBase11getPathTypeEv  mbed.ar(FileBase.o)
+    0x080054a8   0x080054a8   0x00000038   Code   RO         3495    i._ZN4mbed8FileBase6lookupEPKcj  mbed.ar(FileBase.o)
+    0x080054e0   0x080054e0   0x00000018   Code   RO         3284    i._ZN4mbed8FilePath10fileSystemEv  mbed.ar(FilePath.o)
+    0x080054f8   0x080054f8   0x0000001c   Code   RO         3286    i._ZN4mbed8FilePath4fileEv  mbed.ar(FilePath.o)
+    0x08005514   0x08005514   0x0000000a   Code   RO         3287    i._ZN4mbed8FilePath6existsEv  mbed.ar(FilePath.o)
+    0x0800551e   0x0800551e   0x00000018   Code   RO         3288    i._ZN4mbed8FilePath6isFileEv  mbed.ar(FilePath.o)
+    0x08005536   0x08005536   0x00000004   Code   RO         3289    i._ZN4mbed8FilePath8fileNameEv  mbed.ar(FilePath.o)
+    0x0800553a   0x0800553a   0x00000040   Code   RO         3290    i._ZN4mbed8FilePathC1EPKc  mbed.ar(FilePath.o)
     0x0800557a   0x0800557a   0x00000002   PAD
-    0x0800557c   0x0800557c   0x0000001c   Code   RO         3758    i.__0fprintf        mc_w.l(printfa.o)
-    0x08005598   0x08005598   0x00000020   Code   RO         3759    i.__0printf         mc_w.l(printfa.o)
-    0x080055b8   0x080055b8   0x00000028   Code   RO         3761    i.__0sprintf        mc_w.l(printfa.o)
-    0x080055e0   0x080055e0   0x00000018   Code   RO         3762    i.__0vfprintf       mc_w.l(printfa.o)
-    0x080055f8   0x080055f8   0x00000024   Code   RO         3765    i.__0vsprintf       mc_w.l(printfa.o)
-    0x0800561c   0x0800561c   0x0000000e   Code   RO         3988    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x0800562a   0x0800562a   0x00000002   Code   RO         3989    i.__scatterload_null  mc_w.l(handlers.o)
-    0x0800562c   0x0800562c   0x0000000e   Code   RO         3990    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x0800563a   0x0800563a   0x00000018   Code   RO         3502    i._fflush$full      mc_w.l(fflush_f.o)
+    0x0800557c   0x0800557c   0x0000001c   Code   RO         3905    i.__0fprintf        mc_w.l(printfa.o)
+    0x08005598   0x08005598   0x00000020   Code   RO         3906    i.__0printf         mc_w.l(printfa.o)
+    0x080055b8   0x080055b8   0x00000028   Code   RO         3908    i.__0sprintf        mc_w.l(printfa.o)
+    0x080055e0   0x080055e0   0x00000018   Code   RO         3909    i.__0vfprintf       mc_w.l(printfa.o)
+    0x080055f8   0x080055f8   0x00000024   Code   RO         3912    i.__0vsprintf       mc_w.l(printfa.o)
+    0x0800561c   0x0800561c   0x0000000e   Code   RO         4135    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0800562a   0x0800562a   0x00000002   Code   RO         4136    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0800562c   0x0800562c   0x0000000e   Code   RO         4137    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0800563a   0x0800563a   0x00000018   Code   RO         3649    i._fflush$full      mc_w.l(fflush_f.o)
     0x08005652   0x08005652   0x00000002   PAD
-    0x08005654   0x08005654   0x00000184   Code   RO         3766    i._fp_digits        mc_w.l(printfa.o)
-    0x080057d8   0x080057d8   0x000006dc   Code   RO         3767    i._printf_core      mc_w.l(printfa.o)
-    0x08005eb4   0x08005eb4   0x00000024   Code   RO         3768    i._printf_post_padding  mc_w.l(printfa.o)
-    0x08005ed8   0x08005ed8   0x0000002e   Code   RO         3769    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x08005f06   0x08005f06   0x0000000a   Code   RO         3771    i._sputc            mc_w.l(printfa.o)
-    0x08005f10   0x08005f10   0x000000e4   Code   RO         2789    i._sys_open         retarget.o
-    0x08005ff4   0x08005ff4   0x00000028   Code   RO         2791    i._sys_seek         retarget.o
-    0x0800601c   0x0800601c   0x00000060   Code   RO         2792    i._sys_write        retarget.o
-    0x0800607c   0x0800607c   0x00000094   Code   RO         3011    i.analogin_init     mbed.ar(analogin_api.o)
-    0x08006110   0x08006110   0x000000d0   Code   RO         3012    i.analogin_read     mbed.ar(analogin_api.o)
-    0x080061e0   0x080061e0   0x00000018   Code   RO         3097    i.error             mbed.ar(error.o)
-    0x080061f8   0x080061f8   0x00000020   Code   RO         3328    i.exit              mbed.ar(exit.o)
-    0x08006218   0x08006218   0x00000050   Code   RO         3858    i.free              mc_w.l(malloc.o)
-    0x08006268   0x08006268   0x00000050   Code   RO         3254    i.gpio_dir          mbed.ar(gpio_api.o)
-    0x080062b8   0x080062b8   0x0000003c   Code   RO         3255    i.gpio_init         mbed.ar(gpio_api.o)
-    0x080062f4   0x080062f4   0x00000044   Code   RO         3106    i.gpio_init_out     mbed.ar(gpio.o)
-    0x08006338   0x08006338   0x00000008   Code   RO         3256    i.gpio_mode         mbed.ar(gpio_api.o)
-    0x08006340   0x08006340   0x0000005c   Code   RO         3269    i.i2c_frequency     mbed.ar(i2c_api.o)
-    0x0800639c   0x0800639c   0x00000144   Code   RO         3270    i.i2c_init          mbed.ar(i2c_api.o)
-    0x080064e0   0x080064e0   0x0000012c   Code   RO         3271    i.i2c_read          mbed.ar(i2c_api.o)
-    0x0800660c   0x0800660c   0x00000110   Code   RO         3280    i.i2c_write         mbed.ar(i2c_api.o)
-    0x0800671c   0x0800671c   0x0000006c   Code   RO         3859    i.malloc            mc_w.l(malloc.o)
-    0x08006788   0x08006788   0x00000050   Code   RO         3091    i.mbed_assert_internal  mbed.ar(assert.o)
-    0x080067d8   0x080067d8   0x00000010   Code   RO         2767    i.mbed_die          board.o
-    0x080067e8   0x080067e8   0x00000002   Code   RO         2794    i.mbed_main         retarget.o
-    0x080067ea   0x080067ea   0x0000000e   Code   RO         2506    i.mbed_sdk_init     mbed_overrides.o
-    0x080067f8   0x080067f8   0x0000006c   Code   RO         3302    i.pin_function      mbed.ar(pinmap.o)
-    0x08006864   0x08006864   0x00000058   Code   RO         3303    i.pin_mode          mbed.ar(pinmap.o)
-    0x080068bc   0x080068bc   0x00000038   Code   RO         3335    i.pinmap_merge      mbed.ar(pinmap_common.o)
-    0x080068f4   0x080068f4   0x0000005c   Code   RO         3336    i.pinmap_peripheral  mbed.ar(pinmap_common.o)
-    0x08006950   0x08006950   0x00000058   Code   RO         3337    i.pinmap_pinout     mbed.ar(pinmap_common.o)
-    0x080069a8   0x080069a8   0x000000f4   Code   RO         3025    i.pwmout_init       mbed.ar(pwmout_api.o)
-    0x08006a9c   0x08006a9c   0x000000a8   Code   RO         3028    i.pwmout_period_us  mbed.ar(pwmout_api.o)
-    0x08006b44   0x08006b44   0x000000d8   Code   RO         3033    i.pwmout_write      mbed.ar(pwmout_api.o)
-    0x08006c1c   0x08006c1c   0x00000160   Code   RO         3057    i.serial_init       mbed.ar(serial_api.o)
-    0x08006d7c   0x08006d7c   0x00000024   Code   RO         3061    i.serial_putc       mbed.ar(serial_api.o)
-    0x08006da0   0x08006da0   0x00000058   Code   RO         1228    i.timer_irq_handler  hal_tick.o
-    0x08006df8   0x08006df8   0x00000014   Code   RO         3312    i.us_ticker_clear_interrupt  mbed.ar(us_ticker.o)
-    0x08006e0c   0x08006e0c   0x00000014   Code   RO         3313    i.us_ticker_disable_interrupt  mbed.ar(us_ticker.o)
-    0x08006e20   0x08006e20   0x00000040   Code   RO         3119    i.us_ticker_irq_handler  mbed.ar(us_ticker_api.o)
-    0x08006e60   0x08006e60   0x00000030   Code   RO         3315    i.us_ticker_read    mbed.ar(us_ticker.o)
-    0x08006e90   0x08006e90   0x00000014   Code   RO         3316    i.us_ticker_set_interrupt  mbed.ar(us_ticker.o)
-    0x08006ea4   0x08006ea4   0x00000028   Code   RO         3129    i.wait              mbed.ar(wait_api.o)
-    0x08006ecc   0x08006ecc   0x0000001c   Code   RO         3130    i.wait_ms           mbed.ar(wait_api.o)
-    0x08006ee8   0x08006ee8   0x00000018   Code   RO         3131    i.wait_us           mbed.ar(wait_api.o)
+    0x08005654   0x08005654   0x00000184   Code   RO         3913    i._fp_digits        mc_w.l(printfa.o)
+    0x080057d8   0x080057d8   0x000006dc   Code   RO         3914    i._printf_core      mc_w.l(printfa.o)
+    0x08005eb4   0x08005eb4   0x00000024   Code   RO         3915    i._printf_post_padding  mc_w.l(printfa.o)
+    0x08005ed8   0x08005ed8   0x0000002e   Code   RO         3916    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x08005f06   0x08005f06   0x0000000a   Code   RO         3918    i._sputc            mc_w.l(printfa.o)
+    0x08005f10   0x08005f10   0x000000e4   Code   RO         2936    i._sys_open         retarget.o
+    0x08005ff4   0x08005ff4   0x00000028   Code   RO         2938    i._sys_seek         retarget.o
+    0x0800601c   0x0800601c   0x00000060   Code   RO         2939    i._sys_write        retarget.o
+    0x0800607c   0x0800607c   0x00000094   Code   RO         3158    i.analogin_init     mbed.ar(analogin_api.o)
+    0x08006110   0x08006110   0x000000d0   Code   RO         3159    i.analogin_read     mbed.ar(analogin_api.o)
+    0x080061e0   0x080061e0   0x00000018   Code   RO         3244    i.error             mbed.ar(error.o)
+    0x080061f8   0x080061f8   0x00000020   Code   RO         3475    i.exit              mbed.ar(exit.o)
+    0x08006218   0x08006218   0x00000050   Code   RO         4005    i.free              mc_w.l(malloc.o)
+    0x08006268   0x08006268   0x00000050   Code   RO         3401    i.gpio_dir          mbed.ar(gpio_api.o)
+    0x080062b8   0x080062b8   0x0000003c   Code   RO         3402    i.gpio_init         mbed.ar(gpio_api.o)
+    0x080062f4   0x080062f4   0x00000044   Code   RO         3253    i.gpio_init_out     mbed.ar(gpio.o)
+    0x08006338   0x08006338   0x00000008   Code   RO         3403    i.gpio_mode         mbed.ar(gpio_api.o)
+    0x08006340   0x08006340   0x0000005c   Code   RO         3416    i.i2c_frequency     mbed.ar(i2c_api.o)
+    0x0800639c   0x0800639c   0x00000144   Code   RO         3417    i.i2c_init          mbed.ar(i2c_api.o)
+    0x080064e0   0x080064e0   0x0000012c   Code   RO         3418    i.i2c_read          mbed.ar(i2c_api.o)
+    0x0800660c   0x0800660c   0x00000110   Code   RO         3427    i.i2c_write         mbed.ar(i2c_api.o)
+    0x0800671c   0x0800671c   0x0000006c   Code   RO         4006    i.malloc            mc_w.l(malloc.o)
+    0x08006788   0x08006788   0x00000050   Code   RO         3238    i.mbed_assert_internal  mbed.ar(assert.o)
+    0x080067d8   0x080067d8   0x00000010   Code   RO         2914    i.mbed_die          board.o
+    0x080067e8   0x080067e8   0x00000002   Code   RO         2941    i.mbed_main         retarget.o
+    0x080067ea   0x080067ea   0x0000000e   Code   RO         2653    i.mbed_sdk_init     mbed_overrides.o
+    0x080067f8   0x080067f8   0x0000006c   Code   RO         3449    i.pin_function      mbed.ar(pinmap.o)
+    0x08006864   0x08006864   0x00000058   Code   RO         3450    i.pin_mode          mbed.ar(pinmap.o)
+    0x080068bc   0x080068bc   0x00000038   Code   RO         3482    i.pinmap_merge      mbed.ar(pinmap_common.o)
+    0x080068f4   0x080068f4   0x0000005c   Code   RO         3483    i.pinmap_peripheral  mbed.ar(pinmap_common.o)
+    0x08006950   0x08006950   0x00000058   Code   RO         3484    i.pinmap_pinout     mbed.ar(pinmap_common.o)
+    0x080069a8   0x080069a8   0x000000f4   Code   RO         3172    i.pwmout_init       mbed.ar(pwmout_api.o)
+    0x08006a9c   0x08006a9c   0x000000a8   Code   RO         3175    i.pwmout_period_us  mbed.ar(pwmout_api.o)
+    0x08006b44   0x08006b44   0x000000d8   Code   RO         3180    i.pwmout_write      mbed.ar(pwmout_api.o)
+    0x08006c1c   0x08006c1c   0x00000160   Code   RO         3204    i.serial_init       mbed.ar(serial_api.o)
+    0x08006d7c   0x08006d7c   0x00000024   Code   RO         3208    i.serial_putc       mbed.ar(serial_api.o)
+    0x08006da0   0x08006da0   0x00000058   Code   RO         1375    i.timer_irq_handler  hal_tick.o
+    0x08006df8   0x08006df8   0x00000014   Code   RO         3459    i.us_ticker_clear_interrupt  mbed.ar(us_ticker.o)
+    0x08006e0c   0x08006e0c   0x00000014   Code   RO         3460    i.us_ticker_disable_interrupt  mbed.ar(us_ticker.o)
+    0x08006e20   0x08006e20   0x00000040   Code   RO         3266    i.us_ticker_irq_handler  mbed.ar(us_ticker_api.o)
+    0x08006e60   0x08006e60   0x00000030   Code   RO         3462    i.us_ticker_read    mbed.ar(us_ticker.o)
+    0x08006e90   0x08006e90   0x00000014   Code   RO         3463    i.us_ticker_set_interrupt  mbed.ar(us_ticker.o)
+    0x08006ea4   0x08006ea4   0x00000028   Code   RO         3276    i.wait              mbed.ar(wait_api.o)
+    0x08006ecc   0x08006ecc   0x0000001c   Code   RO         3277    i.wait_ms           mbed.ar(wait_api.o)
+    0x08006ee8   0x08006ee8   0x00000018   Code   RO         3278    i.wait_us           mbed.ar(wait_api.o)
     0x08006f00   0x08006f00   0x0000001b   Data   RO          231    .constdata          rtx_conf_cm.o
-    0x08006f1b   0x08006f1b   0x00000010   Data   RO         1689    .constdata          stm32f4xx_hal_rcc.o
-    0x08006f2b   0x08006f2b   0x00000010   Data   RO         2541    .constdata          system_stm32f4xx.o
+    0x08006f1b   0x08006f1b   0x00000010   Data   RO         1836    .constdata          stm32f4xx_hal_rcc.o
+    0x08006f2b   0x08006f2b   0x00000010   Data   RO         2688    .constdata          system_stm32f4xx.o
     0x08006f3b   0x08006f3b   0x00000001   PAD
-    0x08006f3c   0x08006f3c   0x0000012a   Data   RO         3015    .constdata          mbed.ar(analogin_api.o)
+    0x08006f3c   0x08006f3c   0x0000012a   Data   RO         3162    .constdata          mbed.ar(analogin_api.o)
     0x08007066   0x08007066   0x00000002   PAD
-    0x08007068   0x08007068   0x00000168   Data   RO         3035    .constdata          mbed.ar(pwmout_api.o)
-    0x080071d0   0x080071d0   0x000000ec   Data   RO         3068    .constdata          mbed.ar(serial_api.o)
-    0x080072bc   0x080072bc   0x00000073   Data   RO         3108    .constdata          mbed.ar(gpio.o)
+    0x08007068   0x08007068   0x00000168   Data   RO         3182    .constdata          mbed.ar(pwmout_api.o)
+    0x080071d0   0x080071d0   0x000000ec   Data   RO         3215    .constdata          mbed.ar(serial_api.o)
+    0x080072bc   0x080072bc   0x00000073   Data   RO         3255    .constdata          mbed.ar(gpio.o)
     0x0800732f   0x0800732f   0x00000001   PAD
-    0x08007330   0x08007330   0x00000070   Data   RO         3258    .constdata          mbed.ar(gpio_api.o)
-    0x080073a0   0x080073a0   0x000000fc   Data   RO         3282    .constdata          mbed.ar(i2c_api.o)
-    0x0800749c   0x0800749c   0x000000ac   Data   RO         3304    .constdata          mbed.ar(pinmap.o)
-    0x08007548   0x08007548   0x00000040   Data   RO         3980    .constdata          mc_w.l(ctype_c.o)
+    0x08007330   0x08007330   0x00000070   Data   RO         3405    .constdata          mbed.ar(gpio_api.o)
+    0x080073a0   0x080073a0   0x000000fc   Data   RO         3429    .constdata          mbed.ar(i2c_api.o)
+    0x0800749c   0x0800749c   0x000000ac   Data   RO         3451    .constdata          mbed.ar(pinmap.o)
+    0x08007548   0x08007548   0x00000040   Data   RO         4127    .constdata          mc_w.l(ctype_c.o)
     0x08007588   0x08007588   0x00000048   Data   RO          776    .conststring        main.o
-    0x080075d0   0x080075d0   0x00000020   Data   RO         3986    Region$$Table       anon$$obj.o
+    0x080075d0   0x080075d0   0x00000020   Data   RO         4133    Region$$Table       anon$$obj.o
     0x080075f0   0x080075f0   0x00000004   Data   RO          778    .init_array         main.o
-    0x080075f4   0x080075f0   0x00000000   Data   RO         3792    .init_array         mc_w.l(cpp_init.o)
+    0x080075f4   0x080075f0   0x00000000   Data   RO         3939    .init_array         mc_w.l(cpp_init.o)
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000194, Load base: 0x080075f4, Size: 0x000015c4, Max: 0x00017e6c, ABSOLUTE, COMPRESSED[0x00000048])
@@ -4197,33 +4197,33 @@ Memory Map of the image
     0x200001b8   COMPRESSED   0x00000090   Data   RW          232    .data               rtx_conf_cm.o
     0x20000248   COMPRESSED   0x00000004   Data   RW          373    .data               ds1631.o
     0x2000024c   COMPRESSED   0x00000110   Data   RW          777    .data               main.o
-    0x2000035c   COMPRESSED   0x00000004   Data   RW         1230    .data               hal_tick.o
-    0x20000360   COMPRESSED   0x00000004   Data   RW         2422    .data               stm32f4xx_hal.o
-    0x20000364   COMPRESSED   0x00000004   Data   RW         2542    .data               system_stm32f4xx.o
-    0x20000368   COMPRESSED   0x00000004   Data   RW         2835    .data               retarget.o
-    0x2000036c   COMPRESSED   0x00000004   Data   RW         3016    .data               mbed.ar(analogin_api.o)
-    0x20000370   COMPRESSED   0x00000008   Data   RW         3069    .data               mbed.ar(serial_api.o)
-    0x20000378   COMPRESSED   0x00000008   Data   RW         3122    .data               mbed.ar(us_ticker_api.o)
-    0x20000380   COMPRESSED   0x00000004   Data   RW         3240    .data               mbed.ar(I2C.o)
-    0x20000384   COMPRESSED   0x00000004   Data   RW         3318    .data               mbed.ar(us_ticker.o)
-    0x20000388   COMPRESSED   0x00000004   Data   RW         3360    .data               mbed.ar(FileBase.o)
-    0x2000038c   COMPRESSED   0x00000004   Data   RW         3894    .data               mc_w.l(cpp_dtor.o)
-    0x20000390   COMPRESSED   0x00000004   Data   RW         3959    .data               mc_w.l(mvars.o)
-    0x20000394   COMPRESSED   0x00000004   Data   RW         3960    .data               mc_w.l(mvars.o)
+    0x2000035c   COMPRESSED   0x00000004   Data   RW         1377    .data               hal_tick.o
+    0x20000360   COMPRESSED   0x00000004   Data   RW         2569    .data               stm32f4xx_hal.o
+    0x20000364   COMPRESSED   0x00000004   Data   RW         2689    .data               system_stm32f4xx.o
+    0x20000368   COMPRESSED   0x00000004   Data   RW         2982    .data               retarget.o
+    0x2000036c   COMPRESSED   0x00000004   Data   RW         3163    .data               mbed.ar(analogin_api.o)
+    0x20000370   COMPRESSED   0x00000008   Data   RW         3216    .data               mbed.ar(serial_api.o)
+    0x20000378   COMPRESSED   0x00000008   Data   RW         3269    .data               mbed.ar(us_ticker_api.o)
+    0x20000380   COMPRESSED   0x00000004   Data   RW         3387    .data               mbed.ar(I2C.o)
+    0x20000384   COMPRESSED   0x00000004   Data   RW         3465    .data               mbed.ar(us_ticker.o)
+    0x20000388   COMPRESSED   0x00000004   Data   RW         3507    .data               mbed.ar(FileBase.o)
+    0x2000038c   COMPRESSED   0x00000004   Data   RW         4041    .data               mc_w.l(cpp_dtor.o)
+    0x20000390   COMPRESSED   0x00000004   Data   RW         4106    .data               mc_w.l(mvars.o)
+    0x20000394   COMPRESSED   0x00000004   Data   RW         4107    .data               mc_w.l(mvars.o)
     0x20000398        -       0x00000030   Zero   RW            2    .bss                rt_task.o
     0x200003c8        -       0x00000030   Zero   RW           79    .bss                rt_list.o
     0x200003f8        -       0x000004e0   Zero   RW          230    .bss                rtx_conf_cm.o
     0x200008d8        -       0x00000884   Zero   RW          775    .bss                main.o
-    0x2000115c        -       0x0000003c   Zero   RW         1229    .bss                hal_tick.o
-    0x20001198        -       0x00000040   Zero   RW         2831    .bss                retarget.o
-    0x200011d8        -       0x00000044   Zero   RW         3014    .bss                mbed.ar(analogin_api.o)
-    0x2000121c        -       0x0000003c   Zero   RW         3034    .bss                mbed.ar(pwmout_api.o)
-    0x20001258        -       0x00000064   Zero   RW         3067    .bss                mbed.ar(serial_api.o)
-    0x200012bc        -       0x00000038   Zero   RW         3281    .bss                mbed.ar(i2c_api.o)
-    0x200012f4        -       0x0000003c   Zero   RW         3317    .bss                mbed.ar(us_ticker.o)
-    0x20001330        -       0x00000014   Zero   RW         3510    .bss                mc_w.l(stdout_f.o)
-    0x20001344        -       0x00000014   Zero   RW         3511    .bss                mc_w.l(stderr_f.o)
-    0x20001358        -       0x00000400   Zero   RW         2761    HEAP                startup_stm32f401xe.o
+    0x2000115c        -       0x0000003c   Zero   RW         1376    .bss                hal_tick.o
+    0x20001198        -       0x00000040   Zero   RW         2978    .bss                retarget.o
+    0x200011d8        -       0x00000044   Zero   RW         3161    .bss                mbed.ar(analogin_api.o)
+    0x2000121c        -       0x0000003c   Zero   RW         3181    .bss                mbed.ar(pwmout_api.o)
+    0x20001258        -       0x00000064   Zero   RW         3214    .bss                mbed.ar(serial_api.o)
+    0x200012bc        -       0x00000038   Zero   RW         3428    .bss                mbed.ar(i2c_api.o)
+    0x200012f4        -       0x0000003c   Zero   RW         3464    .bss                mbed.ar(us_ticker.o)
+    0x20001330        -       0x00000014   Zero   RW         3657    .bss                mc_w.l(stdout_f.o)
+    0x20001344        -       0x00000014   Zero   RW         3658    .bss                mc_w.l(stderr_f.o)
+    0x20001358        -       0x00000400   Zero   RW         2908    HEAP                startup_stm32f401xe.o
 
 
 ==============================================================================
@@ -4239,7 +4239,7 @@ Image component sizes
        140          6          0          0          0       2127   hal_cm.o
        384         28          0          0          0        944   hal_cm4.o
        256         46          0          4         60        252   hal_tick.o
-       696        160         76        272       2180     326111   main.o
+       696        160         76        272       2180     328199   main.o
         14          0          0          0          0        128   mbed_overrides.o
        144         40          0          0          0       2012   mutex.o
        666         56          0          0          0       7904   nhd_0216hz.o
@@ -4271,7 +4271,7 @@ Image component sizes
          0          0          0          0          0       9100   thread.o
 
     ----------------------------------------------------------------------
-     18008        956        572        472       4672     757028   Object Totals
+     18008        956        572        472       4672     759116   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         18          0          1          1          0          0   (incl. Padding)
 
@@ -4373,8 +4373,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     28012       1828       2184        516       5056     752764   Grand Totals
-     28012       1828       2184         72       5056     752764   ELF Image Totals (compressed)
+     28012       1828       2184        516       5056     754852   Grand Totals
+     28012       1828       2184         72       5056     754852   ELF Image Totals (compressed)
      28012       1828       2184         72          0          0   ROM Totals
 
 ==============================================================================
